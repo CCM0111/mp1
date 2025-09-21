@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valorant - A Fun Game</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>VALORANT</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#introduction" class="nav-link" data-section="introduction">About</a></li>
+                    <li><a href="#agents" class="nav-link" data-section="agents">Agents</a></li>
+                    <li><a href="#maps" class="nav-link" data-section="maps">Maps</a></li>
+                </ul>
+                <div class="position-indicator" id="position-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Home -->
+        <section id="home" class="section home-section">
+            <div class="hero-content">
+                <h1 class="hero-title">VALORANT</h1>
+                <p class="hero-subtitle">A Fun Shooting Game</p>
+            </div>
+            <div class="hero-video">
+                <video autoplay muted loop>
+                    <source src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5b0c58e9b4b5c8aa/5eb26f54402b8b4d13a56656/VALORANT_EP1_IGNITION_Launch_Trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="introduction" class="section intro-section">
+            <div class="container">
+                <h2 class="section-title">About the Game</h2>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h3>What is VALORANT?</h3>
+                        <p>VALORANT is a free online shooting game with cool characters.</p>
+                        <p>Pick your character and work with your team to win!</p>
+                        <button class="modal-trigger" data-modal="intro-modal">Learn More</button>
+                    </div>
+                    <div class="intro-video">
+                        <video autoplay muted loop width="100%" height="300">
+                            <source src="assets/valorant_video.mov" type="video/quicktime">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents -->
+        <section id="agents" class="section agents-section">
+            <div class="container">
+                <h2 class="section-title">Agents</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide active">
+                            <div class="agent-card">
+                                <img src="assets/agent1.jpg" alt="Jett">
+                                <h3>Jett</h3>
+                                <p>A fast character who can dash around.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="agent-card">
+                                <img src="assets/agent2.png" alt="Iso">
+                                <h3>Iso</h3>
+                                <p>A character who can create shields.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="agent-card">
+                                <img src="assets/agent3.jpg" alt="Sage">
+                                <h3>Sage</h3>
+                                <p>A support character who can heal teammates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maps -->
+        <section id="maps" class="section maps-section">
+            <div class="container">
+                <h2 class="section-title">Maps</h2>
+                <div class="maps-grid">
+                    <div class="map-card" data-modal="ascent-modal">
+                        <img src="assets/map1.jpg" alt="Ascent">
+                        <div class="map-info">
+                            <h3>Ascent</h3>
+                            <p>A nice map with doors and lots of places to fight.</p>
+                            <span class="click-hint">Click to learn more</span>
+                        </div>
+                    </div>
+                    <div class="map-card" data-modal="split-modal">
+                        <img src="assets/map2.jpg" alt="Split">
+                        <div class="map-info">
+                            <h3>Split</h3>
+                            <p>A tall city map with ropes to climb.</p>
+                            <span class="click-hint">Click to learn more</span>
+                        </div>
+                    </div>
+                    <div class="map-card" data-modal="icebox-modal">
+                        <img src="assets/map3.jpg" alt="Icebox">
+                        <div class="map-info">
+                            <h3>Icebox</h3>
+                            <p>A cold map with containers and ziplines.</p>
+                            <span class="click-hint">Click to learn more</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>VALORANT</h3>
+                        <p>A Fun Shooting Game</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitch"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modals -->
+        <!-- About Modal -->
+        <div id="intro-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>About VALORANT</h2>
+                <p>VALORANT is a fun shooting game with special characters.</p>
+                <h3>What's Cool:</h3>
+                <ul>
+                    <li>Easy to learn</li>
+                    <li>Characters with powers</li>
+                    <li>Team gameplay</li>
+                    <li>5 vs 5 matches</li>
+                </ul>
+                <p>Join lots of players and have fun!</p>
+            </div>
+        </div>
+
+        <!-- Ascent Map Modal -->
+        <div id="ascent-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Ascent</h2>
+                <div class="modal-body">
+                    <img src="assets/map1.jpg" alt="Ascent Map" class="modal-image">
+                    <h3>Map Details:</h3>
+                    <ul>
+                        <li>Location: Venice, Italy</li>
+                        <li>Sites: A and B</li>
+                        <li>Special Feature: Mechanical doors</li>
+                        <li>Best for: Strategic gameplay</li>
+                    </ul>
+                    <p>Ascent is a map with wide open spaces and long sightlines. The mechanical doors can be closed to change rotations and create new strategic opportunities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Split Map Modal -->
+        <div id="split-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Split</h2>
+                <div class="modal-body">
+                    <img src="assets/map2.jpg" alt="Split Map" class="modal-image">
+                    <h3>Map Details:</h3>
+                    <ul>
+                        <li>Location: Tokyo, Japan</li>
+                        <li>Sites: A and B</li>
+                        <li>Special Feature: Vertical gameplay with ropes</li>
+                        <li>Best for: Fast-paced action</li>
+                    </ul>
+                    <p>Split features a unique vertical design with ropes connecting different levels. Control of mid is crucial for success on this map.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icebox Map Modal -->
+        <div id="icebox-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Icebox</h2>
+                <div class="modal-body">
+                    <img src="assets/map3.jpg" alt="Icebox Map" class="modal-image">
+                    <h3>Map Details:</h3>
+                    <ul>
+                        <li>Location: Arctic shipping yard</li>
+                        <li>Sites: A and B</li>
+                        <li>Special Feature: Ziplines and containers</li>
+                        <li>Best for: Vertical control</li>
+                    </ul>
+                    <p>Icebox is a cold, industrial map with stacked containers and ziplines. Vertical positioning and sharp aim are key to winning rounds.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
